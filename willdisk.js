@@ -32,9 +32,9 @@ if (Meteor.isClient) {
 Template.hello.events({
   'click .check': function () {
     if (Session.get('counter') != 0) {
-      Session.set('answer',"Wrong")
+      Session.set('answer',": Wrong")
       } else {
-        Session.set('answer',"Right")
+        Session.set('answer',": Right")
       };
   }
 });
